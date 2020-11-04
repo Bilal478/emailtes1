@@ -2,12 +2,25 @@
 
 @section('content')
 <div class="container">
+   
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header">{{ __('Login') }}</div>
-
+                
                 <div class="card-body">
+
+                    <div class="text-center">
+                        <div class="row">
+                            <div class="col-3 offset-4"><a class="bg-primary text-white p-2" href="#">Facebook</a></div>
+                            <div class=""><a class="bg-danger text-white p-2" href="#">Google</a></div>
+                        </div>
+                        <div class="col-5 offset-4">
+                            <hr>
+                            OR
+                        </div>
+                       
+                    </div>
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
 
